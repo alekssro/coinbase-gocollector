@@ -11,8 +11,18 @@ func main() {
 
 	p := flag.String("product", "BTC-EUR", "Crypto trade value to store")
 	f := flag.String("filename", "dataset.csv", "Filename to save the dataset to")
+	t := flag.Int("time", 30, "Time of data collection, in days")
+	g := flag.Int("granularity", 21600, "Time between data points, in seconds")
 	flag.Parse()
 
 	logger.Info("Coinbase history collector started...")
-	collector.CreateDataset(*p, *f)
+
+	datasetArgs := collector.DatasetArgs{
+		Product:     p,
+		Filename:    f,
+		Time:        t,
+		Granularity: g,
+	}
+
+	collector.CreateDataset(datasetArgs.ToConfig())
 }
