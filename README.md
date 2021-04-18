@@ -13,7 +13,7 @@ This is the service in charge of collecting the cryptocurrency price evolution d
 
 ## Example of use
 
-Collect BTC-EUR historic data every 1 hourt for the last year and save it in `out/BTC.csv` 
+Collect BTC-EUR historic data every 1 hour for the last year and save it in `out/BTC.csv` 
 
 ```
 go run cmd/main.go --product="BTC-EUR" --time=365 --granularity=3600 --filename="out/BTC.csv"
