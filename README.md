@@ -16,7 +16,7 @@ This is the service in charge of collecting the cryptocurrency price evolution d
 Collect BTC-EUR historic data every 1 hour for the last year and save it in `out/BTC.csv` 
 
 ```
-go run cmd/main.go --product="BTC-EUR" --time=365 --granularity=3600 --filename="out/BTC.csv"
+go run cmd/main.go --product="BTC-EUR" --time=365 --granularity=3600 --filename="out/BTC-EUR.csv"
 ```
 
 ## Usage
