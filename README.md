@@ -24,7 +24,7 @@ go run cmd/main.go --product="BTC-EUR" --time=365 --granularity=3600 --filename=
 ```
 Usage of cmd/main:
   -filename string
-        Filename to save the dataset to (default "dataset.csv")
+        Filename to save the dataset to (default "BTC-EUR.csv")
   -granularity int
         Time between data points, in seconds. Options: {60, 300, 900, 3600, 21600, 86400}. (default 21600)
   -product string
