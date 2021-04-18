@@ -16,3 +16,6 @@
 
 # secrets
 secrets*
+
+# dataset output directory
+out/
